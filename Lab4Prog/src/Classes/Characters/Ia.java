@@ -33,12 +33,12 @@ public class Ia extends Character {
         
         switch (currentWeather) {
             case 
-            Weather.SUNNY, 
-            Weather.GOOD,
-            Weather.CHEERFUL,
-            Weather.WARM,
-            Weather.PACIFIC,
-            Weather.FUNNY:
+            SUNNY, 
+            GOOD,
+            CHEERFUL,
+            WARM,
+            PACIFIC,
+            FUNNY:
                 this.cookiesCount -= this.eatSpeed - 1;
                 break;
             default:
@@ -47,3 +47,4 @@ public class Ia extends Character {
         }
     }   
 }
+
