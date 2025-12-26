@@ -34,10 +34,10 @@ public class Hrunya extends Character {
         
         switch (currentWeather) {
             case 
-            Weather.WINDY,
-            Weather.FOGGY,
-            Weather.SNOWY,
-            Weather.STORMY:
+            WINDY,
+            FOGGY,
+            SNOWY,
+            STORMY:
                 this.cookiesCount -= this.eatSpeed - 3;
                 break;
             default:
@@ -46,3 +46,4 @@ public class Hrunya extends Character {
         }
     }   
 }
+
