@@ -34,16 +34,16 @@ public class Tigrulya extends Character {
         
         switch (currentWeather) {
             case 
-            Weather.SUNNY, 
-            Weather.GOOD,
-            Weather.CHEERFUL,
-            Weather.WARM,
-            Weather.FUNNY:
+            SUNNY, 
+            GOOD,
+            CHEERFUL,
+            WARM,
+            FUNNY:
                 this.cookiesCount -= this.eatSpeed - 2;
                 break;
             case 
-            Weather.CLOUDY, 
-            Weather.PACIFIC:
+            CLOUDY, 
+            PACIFIC:
                 this.cookiesCount -= this.eatSpeed;
                 break;
             default:
@@ -52,3 +52,4 @@ public class Tigrulya extends Character {
         }
     }   
 }
+
