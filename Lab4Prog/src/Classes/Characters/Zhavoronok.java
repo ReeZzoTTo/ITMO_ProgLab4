@@ -26,11 +26,11 @@ public class Zhavoronok extends Character {
         
         switch (currentWeather) {
             case 
-            Weather.HOT,
-            Weather.RAINY,
-            Weather.SNOWY,
-            Weather.FOGGY,
-            Weather.STORMY:
+            HOT,
+            RAINY,
+            SNOWY,
+            FOGGY,
+            STORMY:
                 this.cookiesCount -= this.eatSpeed - 1;
             default:
                 this.cookiesCount -= this.eatSpeed;
@@ -38,3 +38,4 @@ public class Zhavoronok extends Character {
         }
     }   
 }
+
