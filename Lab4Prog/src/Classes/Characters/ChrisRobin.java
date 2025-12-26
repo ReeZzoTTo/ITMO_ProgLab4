@@ -32,17 +32,17 @@ public class ChrisRobin extends Character {
         
         switch (currentWeather) {
             case 
-            Weather.SUNNY, 
-            Weather.GOOD,
-            Weather.CHEERFUL,
-            Weather.WARM,
-            Weather.PACIFIC,
-            Weather.FUNNY:
+            SUNNY, 
+            GOOD,
+            CHEERFUL,
+            WARM,
+            PACIFIC,
+            FUNNY:
                 this.cookiesCount -= this.eatSpeed + 1;
                 break;
             case 
-            Weather.CLOUDY, 
-            Weather.HOT:
+            CLOUDY, 
+            HOT:
                 this.cookiesCount -= this.eatSpeed;
                 break;
             default:
@@ -51,4 +51,5 @@ public class ChrisRobin extends Character {
         }
     }   
 }
+
 
