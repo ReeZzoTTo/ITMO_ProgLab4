@@ -3,8 +3,6 @@ package Classes;
 import java.util.ArrayList;
 import java.util.Random;
 
-import Classes.Locations.Location;
-
 public class Control {
     static private ArrayList<Location> locationList;
     static public final Random RANDOM = new Random();

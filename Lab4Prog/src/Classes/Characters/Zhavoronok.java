@@ -1,6 +1,6 @@
 package Classes.Characters;
 
-import Classes.Locations.Location;
+import Classes.Location;
 import Enums.Weather;
 import Exceptions.CookiesEatingException;
 
@@ -38,4 +38,3 @@ public class Zhavoronok extends Character {
         }
     }   
 }
-

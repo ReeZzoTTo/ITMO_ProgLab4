@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.Objects;
 
 import Classes.Characters.Character;
-import Classes.Locations.Location;
 import Enums.MiniLocations;;
 
 public class Team {
@@ -85,7 +84,7 @@ public class Team {
             member.setCurrentLocation(location, miniLocation);
         }
     }
-
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

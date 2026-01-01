@@ -1,7 +1,7 @@
 package Classes.Characters;
 
 import Classes.Control;
-import Classes.Locations.Location;
+import Classes.Location;
 import Enums.Weather;
 import Exceptions.CookiesEatingException;
 
@@ -51,5 +51,4 @@ public class ChrisRobin extends Character {
         }
     }   
 }
-
 

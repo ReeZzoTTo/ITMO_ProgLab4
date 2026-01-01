@@ -1,6 +1,6 @@
 package Records;
 
-import Classes.Locations.Location;
+import Classes.Location;
 import Enums.MiniLocations;
 
 public record HiderData(String hiderName, Location hiderLocation, MiniLocations hiderMiniLocation) {

@@ -1,8 +1,8 @@
 import Classes.Control;
+import Classes.Location;
 import Classes.Team;
 import Classes.Characters.*;
 import Classes.Characters.Character;
-import Classes.Locations.*;
 import Enums.Feelings;
 import Enums.MiniLocations;
 import Enums.Weather;
@@ -14,13 +14,6 @@ import java.util.Arrays;
 import java.util.Collections;
 
 // * Variant 6578567
-
-// ? UML-диаграмма 
-// * Методы через нейросеть - сравнение
-// * Запуск на helios
-// * Отчёт
-// * Экспорт на ГитХаб
-// * Теория
 
 public class Main {
     public static void main(String[] args) throws CookiesEatingException {
@@ -49,11 +42,36 @@ public class Main {
             zhavoronok  = new Zhavoronok("Жаворонок", 10, 2);
         }
 
-        Forest      forest      = new Forest("Лес");
-        Hill        hill        = new Hill("Холм");
-        GloomyPlace gloomyPlace = new GloomyPlace("Глухое место");
-        Home        home        = new Home("Дом Кристофера Робина");
+        ArrayList<MiniLocations> forestLocatoinList = new ArrayList<>(Arrays.asList(
+            MiniLocations.HONNEY_TREE,
+            MiniLocations.POND,
+            MiniLocations.SHRUBS_ALLEY,
+            MiniLocations.ROCKY_FIELD,
+            MiniLocations.FLOWERBED
+        ));
 
+        ArrayList<MiniLocations> hillLocationList = new ArrayList<>(Arrays.asList(
+            MiniLocations.MINK,
+            MiniLocations.BIG_ROCK
+        ));
+
+        ArrayList<MiniLocations> gloomyPlaceLocationList = new ArrayList<>(Arrays.asList(
+             MiniLocations.IA_HOME,
+            MiniLocations.LAKE
+        ));
+
+        ArrayList<MiniLocations> homeLocationList = new ArrayList<>(Arrays.asList(
+            MiniLocations.KITCHEN,
+            MiniLocations.ROBIN_ROOM,
+            MiniLocations.GARDEN,
+            MiniLocations.HALL
+        ));
+
+        Location      forest      = new Location("Лес", forestLocatoinList);
+        Location        hill        = new Location("Холм", hillLocationList);
+        Location gloomyPlace = new Location("Глухое место", gloomyPlaceLocationList);
+        Location        home        = new Location("Дом Кристофера Робина", homeLocationList);
+        
         Control.setLocations(new ArrayList<>(Arrays.asList(forest, hill, gloomyPlace, home)));
 
         ArrayList<Character> characterList = new ArrayList<>(Arrays.asList(
@@ -136,6 +154,5 @@ public class Main {
         for (String sentence : Control.getResultText()) {
             System.out.println(sentence);
         }
-
     }
 }

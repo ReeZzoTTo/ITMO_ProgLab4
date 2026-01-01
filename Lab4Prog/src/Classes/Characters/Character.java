@@ -2,7 +2,7 @@ package Classes.Characters;
 
 import java.util.Objects;
 
-import Classes.Locations.Location;
+import Classes.Location;
 import Enums.Actions;
 import Enums.MiniLocations;
 
@@ -38,8 +38,8 @@ public abstract class Character {
     }
 
     public void setCurrentLocation(Location location, MiniLocations curLocation) {
-        this.currentLocation = location;
-        this.currentMiniLocation = curLocation;
+        this.currentLocation(location);
+        this.currentMiniLocation(curLocation);
     }
 
     public int getCookiesCount() {
